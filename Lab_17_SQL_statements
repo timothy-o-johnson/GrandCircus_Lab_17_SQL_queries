@@ -1,0 +1,39 @@
+Timothy Johnson
+Grand Circus
+Lab_17_SQL
+17 Nov 17
+
+1. SELECT * FROM Customers;
+2. SELECT Distinct(country) FROM Customers;
+3. SELECT * FROM Customers WHERE CustomerName LIKE "BL%"
+4. SELECT TOP 100 * FROM Orders
+5. SELECT * FROM [Customers] WHERE PostalCode IN (1010, 3012, 12209, 05023)
+6. ShipRegion?
+7. SELECT * FROM Customers ORDER BY Country, City;
+8. INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Tim', 'Tom B. Erichsen', 'Nevermore', 'Stavanger', '4006', 'Norway');
+9.  no shipper region
+10. DELETE FROM [OrderDetails]
+WHERE Quantity = 1;
+
+11. 
+min: SELECT MIN(Quantity) AS SmallestPrice FROM [OrderDetails];
+max: SELECT MAX(Quantity) AS MaxPrice FROM [OrderDetails];
+average: SELECT AVG(Quantity) AS AveragePrice FROM [OrderDetails];
+
+12. average of just one number?
+
+13. SELECT * FROM [Orders] WHERE orderid = 10290;
+
+14. 
+
+SELECT Orders.OrderID, Customers.CustomerName FROM Customers INNER JOIN orders ON customers.customerID = orders.customerID;
+
+SELECT Orders.OrderID, Customers.CustomerName FROM Customers LEFT JOIN orders ON customers.customerID = orders.customerID;
+
+
+15.  No fields for "reports to"
+
+16. 
+
+
